@@ -39,7 +39,7 @@ function longestWord(text) {
   //Sorting by word length
   function longestWord(text) {
     let sorted = text.split(' ').sort((a, b) => b.length - a.length)
-    return sorted
+    return sorted[0]
     } 
 
 
