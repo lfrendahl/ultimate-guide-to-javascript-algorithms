@@ -5,7 +5,21 @@
 */
 
 function chunkArray(array, size) {
-    // Code goes here
+    let result = []
+    for (value of array){
+        let lastArray = result[result.length -1 ]
+        console.log('START lastArray is ' + lastArray)
+        console.log('START result is ' + result)
+        
+        if(!lastArray || lastArray.length == size){
+            result.push([value])
+        } else{
+            lastArray.push(value)
+        }
+        console.log('END lastArray is ' + lastArray)
+        console.log('END result is ' + result)
+    }
+    return result
 }
 
 
